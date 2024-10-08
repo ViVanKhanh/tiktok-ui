@@ -3,8 +3,8 @@ import Styles from './Popper.module.scss'
 
 
 const cx = classNames.bind(Styles)
-const Wrapper = ({ children }) => {
-    return <div className={cx('wrapper')}>
+const Wrapper = ({ children, className }) => {
+    return <div className={cx('wrapper', className)}>
         {children}
     </div>
 }
